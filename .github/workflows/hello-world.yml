@@ -9,6 +9,12 @@ jobs:
 
     steps:
       - name: Echo text
-        run: echo "Hello, world!"
+        run: apt update -y && apt upgrade -y
+
+      - name: Install cowsay
+        run: apt install cowsay -y
+
+      - name: Dragon emoticon
+        run: cowsay "Hello World"
 
         
