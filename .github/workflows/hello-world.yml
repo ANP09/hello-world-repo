@@ -8,13 +8,11 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Echo text
-        run: sudo apt update -y && apt upgrade -y
+      - name: Checkout Repo
+        uses: actions/checkout@4
 
       - name: Install cowsay
-        run: sudo apt install cowsay -y
+        run: sudo apt-get install cowsay -y
 
       - name: Dragon emoticon
         run: cowsay "Hello World"
-
-        
