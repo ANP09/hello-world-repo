@@ -9,7 +9,7 @@ jobs:
 
     steps:
       - name: Checkout Repo
-        uses: actions/checkout@4
+        uses: actions/checkout@v4
 
       - name: Install cowsay
         run: sudo apt-get install cowsay -y
