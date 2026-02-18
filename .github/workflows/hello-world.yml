@@ -9,10 +9,10 @@ jobs:
 
     steps:
       - name: Echo text
-        run: apt update -y && apt upgrade -y
+        run: sudo apt update -y && apt upgrade -y
 
       - name: Install cowsay
-        run: apt install cowsay -y
+        run: sudo apt install cowsay -y
 
       - name: Dragon emoticon
         run: cowsay "Hello World"
